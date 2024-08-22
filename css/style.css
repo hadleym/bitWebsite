@@ -1,0 +1,86 @@
+
+#e1381b -red
+#f8b028 -- yello
+body{
+    background-color: #f4f4f4;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin:0
+}
+.banner {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    background-color: white;
+}
+
+.banner-img {
+    object-fit: cover;
+    display: block;
+}
+
+.left-img, .right-img {
+    min-width: 0;
+    max-width: 10%;
+    height: auto;
+    object-fit: cover;
+}
+
+.middle-img {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#navbar {
+    background-color: #3674c1;
+#    background-color: #333;
+#    color:#fff;
+#    color:#333;
+}
+
+#navbar ul{
+    padding:0;
+    list-style: none;
+}
+
+#navbar li{
+    display:inline;
+}
+
+#navbar a{
+    color:#000;
+    text-decoration: none;
+    font-size: 18;
+    padding-right: 15px;
+}
+
+#showcase {
+  background-image: linear-gradient(white,  #e1381b);
+  background-position: right center;
+  min-height: 300px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#showcase h1{
+    color:#799;
+    font: size 50px;
+    line-height: 1.6em;
+    padding-top: 30px;
+}
+
+#main {
+    float:left;
+    width: 70%;
+    padding:0 30px;
+    box-sizing: border-box;
+}
