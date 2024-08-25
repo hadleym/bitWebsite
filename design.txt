@@ -1,0 +1,38 @@
+design first
+    - who is the core audience
+    - how will you help them
+    - 
+    - headings
+    - paragraphs
+    - buttons
+    - images
+    - sub headings
+    - cards
+
+    - this will lead to the right structure
+
+    - divide into sections
+    - the first section is the hero section
+
+    - the main heading will be easy: what problem are you solving?
+
+
+    - Why should the user care? Because they need to know who billy is.
+        understand the prodcut or sesrvice.
+        is the service...listening to our podcasts?
+        is the service...joining the group
+        hero section
+        make sure call to action is right there. (click here, learn more, listen here)
+
+I. Hero section
+
+II. Additional Information
+    - Second secion is more information about our product or services.
+        - think this is an explination of what the group is and how it is being put together.
+    - no fluff straight to the point.
+    - repeatedly ask " what is the purpose of this section?"
+        - its just to explain something.
+        - use simple words
+
+
+    - you must know what questions your users will have.

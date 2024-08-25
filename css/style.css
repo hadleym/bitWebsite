@@ -64,7 +64,6 @@ body{
 }
 
 #showcase {
-  background-image: linear-gradient(white,  #e1381b);
   background-position: right center;
   min-height: 300px;
   margin-bottom: 30px;
