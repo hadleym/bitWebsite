@@ -1,29 +1,48 @@
+:root {
+    --main-bg-color: white;
+    --main-font-color: white;
+    --color1: #e1381b; /* red */
+    --color2: #f8b028;  /* yellow */
+    --color3: #f4f4f4; /* white */
+    --color4: #3674c1; /* blue */
+}
 
-#e1381b -red
-#f8b028 -- yello
+div {
+    border: 20px solid transparent;
+    border-color: black;
+}
+
 body{
-    background-color: #f4f4f4;
+    background-color: var(color2);
     color: #555;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.6em;
     margin:0
 }
+header div {
+    align-content: center;
+}
+
 .banner {
     display: flex;
+    justify-content: center;
     width: 100%;
     align-items: stretch;
-    background-color: white;
+    background-color: var(--main-bg-color);
 }
 
 .banner-img {
+    display: flex;
+    align-content: center;
+    align-self: center;
     object-fit: cover;
     display: block;
 }
 
 .left-img, .right-img {
     min-width: 0;
-    max-width: 10%;
+    flex-basis: 10%;
     height: auto;
     object-fit: cover;
 }
@@ -34,17 +53,10 @@ body{
     object-fit: contain;
 }
 
-.container{
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
 #navbar {
-    background-color: #3674c1;
-#    background-color: #333;
-#    color:#fff;
-#    color:#333;
+    display: flex;
+    background-color: var(--color4);
+    margin: auto;
 }
 
 #navbar ul{
@@ -70,16 +82,30 @@ body{
   text-align: center;
 }
 
-#showcase h1{
-    color:#799;
-    font: size 50px;
-    line-height: 1.6em;
-    padding-top: 30px;
+.outter-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: var(--main-bg-color);
+    width: 50%;
 }
 
-#main {
-    float:left;
-    width: 70%;
-    padding:0 30px;
-    box-sizing: border-box;
+.my-box {
+    min-width: 20%;
+    width: 80%;
+    align-content: center;
+    margin: auto;
 }
+.my-box a{
+
+}
+
+.what {
+    background-image: url('./images/billy1.png');
+    height: 200px;
+    width: 200px;
+}
+
+
+
