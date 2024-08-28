@@ -1,27 +1,23 @@
 :root {
-    --main-bg-color: white;
+    --main-bg-color: var(--color3);
     --main-font-color: white;
     --color1: #e1381b; /* red */
     --color2: #f8b028;  /* yellow */
     --color3: #f4f4f4; /* white */
     --color4: #3674c1; /* blue */
-}
-
-div {
-    border: 20px solid transparent;
-    border-color: black;
+    --color5: #333; /* dark grey */
 }
 
 body{
-    background-color: var(color2);
     color: #555;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.6em;
     margin:0
 }
-header div {
-    align-content: center;
+
+.header {
+    text-align: center;
 }
 
 .banner {
@@ -29,7 +25,6 @@ header div {
     justify-content: center;
     width: 100%;
     align-items: stretch;
-    background-color: var(--main-bg-color);
 }
 
 .banner-img {
@@ -82,13 +77,36 @@ header div {
   text-align: center;
 }
 
-.outter-container{
+.container{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+
+.container img {
+    display: block;
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: cover;
     margin: auto;
-    background-color: var(--main-bg-color);
-    width: 50%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.outter-container{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.outter-container .container:nth-child(odd) {
+    background-color: var(--cklor3); /* Red for odd rows */
+}
+
+.outter-container .container:nth-child(even) {
+    background-color: var(--color5); /* Yellow for even rows */
 }
 
 .my-box {
