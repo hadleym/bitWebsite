@@ -1,6 +1,8 @@
 :root {
-    --main-bg-color: var(--color3);
+    --main-bg-color: var(--bg-color1);
     --main-font-color: white;
+    --bg-color1: #333;
+    --bg-color2: black;
     --color1: #e1381b;
     /* red */
     --color2: #f8b028;
@@ -13,10 +15,25 @@
     /* dark grey */
 }
 
+@font-face {
+    font-family: 'customButtonText';
+    src: url('../fonts/VCR_OSD_MONO_1.001.ttf') format('trueType');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'customFontFamily';
+    src: url('../fonts/Pixeled.ttf') format('trueType');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    color: #755;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    /*font-family: 'customFontFamily', sans-serif;*/
+    font-size: 16;
     line-height: 1.6em;
     margin: 0
 }
@@ -27,10 +44,23 @@ body {
 
 .banner {
     display: flex;
+    font-family: 'customFontFamily', sans-serif;
+    font-size: 16px;
+    background-color: var(--main-bg-color);
     justify-content: center;
-    width: 100%;
-    align-items: stretch;
+    margin: auto;
+    /* width: 100%; */
 }
+
+/*
+.banner a,
+.banner a:hover,
+.banner a:visited,
+.banner a:active {
+    font-size: 1em;
+    background-color: #000;
+}
+    */
 
 .banner-img {
     display: flex;
@@ -54,9 +84,28 @@ body {
     object-fit: contain;
 }
 
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+#navbar li {
+    margin: 0 15px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #333;
+}
+/*
 #navbar {
     display: flex;
-    background-color: var(--color4);
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: var(--bg-color2);
     margin: auto;
 }
 
@@ -66,18 +115,23 @@ body {
 }
 
 #navbar li {
+    font-family: 'customButtonText', sans-serif;
     display: inline;
+    margin: 5em;
+    padding: 10px;
+    background-color: var(--bg-color1);
 }
+
 
 #navbar a {
-    color: #000;
+    color: var(--bg-color2);
     text-decoration: none;
-    font-size: 18;
     padding-right: 15px;
 }
+    */
 
 .outter-container {
-    background-color: var(--color5);
+    background-color: var(--bg-color2);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,15 +140,15 @@ body {
 }
 
 .outter-container .container:nth-child(odd) {
-    background-color: var(--color5);
+    background-color: var(--bg-color1);
     /* Red for odd rows */
-    color: white;
+    color: black;
 }
 
 .outter-container .container:nth-child(even) {
-    background-color: var(--color4);
+    background-color: var(--bg-color2);
     /* Yellow for even rows */
-    color: black;
+    color: white;
 }
 
 .container {
@@ -108,7 +162,7 @@ body {
 .container img {
     display: block;
     max-width: 50%;
-    max-height: 50%;
+    /* max-height: 50%;*/
     object-fit: cover;
     margin: auto;
     margin-bottom: 50px;
@@ -116,7 +170,6 @@ body {
 }
 
 .my-box {
-    appearance: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,10 +179,65 @@ body {
     margin: 0 10px;
 }
 
-.my-box a, a:hover, a:visited, a:active {
+.my-box a {
     text-decoration: none;
     border-radius: 10%;
     padding: 20px;
-    background-color: var(--color2);
+    background-color: var(--color4);
     white-space: nowrap;
+
+
+    font-size: 1.6em;
+    color: white;
+    text-decoration: none;
+    padding-right: 15px;
+}
+
+.my-graphic-1 {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+.my-graphic-2 {
+    border: 2px solid red;
+}
+
+.my-graphic-3 {
+    position: relative;
+    display: inline-block;
+}
+
+.my-graphic-3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Semi-transparent dark overlay */
+    pointer-events: none;
+    /* Ensures the overlay doesn't interfere with interactivity */
+    z-index: 1;
+    border-radius: inherit;
+    /* Matches any rounded corners */
+}
+
+.my-div {
+    width:50%;
+    height: auto;
+
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1px;
+    justify-items: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
