@@ -97,38 +97,16 @@ body {
 }
 
 #navbar a {
+    padding: 10px 15px;
     text-decoration: none;
     color: #333;
 }
-/*
-#navbar {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    background-color: var(--bg-color2);
-    margin: auto;
-}
 
-#navbar ul {
-    padding: 0;
-    list-style: none;
+#navbar a:hover {
+    color: var(--color1);
+    border-bottom: 2px solid var(--color1);
+    transition: color 0.1s ease, border-bottom 0.1s ease;
 }
-
-#navbar li {
-    font-family: 'customButtonText', sans-serif;
-    display: inline;
-    margin: 5em;
-    padding: 10px;
-    background-color: var(--bg-color1);
-}
-
-
-#navbar a {
-    color: var(--bg-color2);
-    text-decoration: none;
-    padding-right: 15px;
-}
-    */
 
 .outter-container {
     background-color: var(--bg-color2);
@@ -182,16 +160,18 @@ body {
 .my-box a {
     text-decoration: none;
     border-radius: 10%;
-    padding: 20px;
+    padding: 20px 30px;
     background-color: var(--color4);
     white-space: nowrap;
-
-
     font-size: 1.6em;
     color: white;
     text-decoration: none;
     padding-right: 15px;
-<<<<<<< HEAD
+}
+
+.my-box a:hover {
+    background-color: var(--color1);
+    transform: scale(1.05);
 }
 
 .my-graphic-1 {
@@ -242,3 +222,24 @@ body {
     height: auto;
     display: block;
 }
+
+@media (max-width: 768px) {
+
+    .my-box {
+        width: 90%;
+    }
+
+    .container img {
+        max-width: 100%;
+    }
+
+    .my-box a {
+        font-size: 1.2em;
+        padding: 15px 20px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
+
