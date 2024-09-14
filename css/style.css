@@ -166,15 +166,13 @@ p {
     margin-bottom: 60px;
 }
 
-
 .container img {
     display: block;
-    max-width: 50%;
-    /* max-height: 50%;*/
+    max-width: 75%;
     object-fit: cover;
     margin: auto;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .my-box {
@@ -274,4 +272,78 @@ p {
         padding: 20px;
     }
 }
+
+/* Adjusting the overall grid */
+.podcast-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
+    grid-gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+/* Adjusting each card */
+.podcast-card {
+    width: 100%;
+    max-width: 200px; /* Limiting card width */
+    margin: 10px; /* Reduced margin */
+    background-color: var(--bg-color2); /* You can choose the background color */
+    border-radius: 5px; /* Reduced border-radius for a cleaner look */
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Slightly smaller shadow */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: auto;
+    padding: 5px; /* Reduced padding for tighter spacing */
+    border: none; /* Remove any border, unless you want to add a custom one */
+}
+
+/* Hover effects */
+.podcast-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.podcast-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.podcast-card h3 {
+    font-size: 1.4em;
+    margin: 10px 0;
+}
+
+.podcast-card p {
+    font-size: 1em;
+    color: var(--main-font-color);
+    padding: 10px;
+}
+
+.podcast-card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color4);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.podcast-card a:hover {
+    background-color: var(--color1); /* Change to red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .podcast-grid {
+        grid-template-columns: 1fr; /* Switch to single column layout on smaller screens */
+    }
+}
+
+
+
 
