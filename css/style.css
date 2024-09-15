@@ -17,16 +17,17 @@
 
 @font-face {
     font-family: 'customButtonText';
-    src: url('../fonts/VCR_OSD_MONO_1.001.ttf') format('trueType');
+    src: url('../fonts/VCR_OSD_MONO_1.001.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-VCR_OSD_MONO_1.001.ttf
-    margin-bottom: 50px;
 
 @font-face {
     font-family: 'customFontFamily';
-    src: url('../fonts/Almondlatte-BWgYd.ttf') format('trueType');
+    src: url('../fonts/wonderbar/Wonderbar\ Demo.otf') format('truetype');
+
+    /*src: url('../fonts/eddie.ttf') format('truetype');*/
+    
     font-weight: normal;
     font-style: normal;
 }
@@ -46,18 +47,18 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 3em;
-    color: var(--color1);
+    font-size: 3.0em;
+    color: var(--color2);
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 2.0em;
     color: var(--color2);
 }
 
 h3 {
-    font-size: 2em;
-    color: var(--color4);
+    font-size: 1.5em;
+    color: var(--color3);
 }
 
 p {
@@ -74,11 +75,10 @@ p {
 .banner {
     display: flex;
     font-family: 'customFontFamily', sans-serif;
-    font-size: 16px;
     background-color: var(--main-bg-color);
     justify-content: center;
     margin: auto;
-    /* width: 100%; */
+    width: 100%;
 }
 
 /*
