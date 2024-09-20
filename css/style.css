@@ -1,6 +1,6 @@
 :root {
     --main-bg-color: var(--bg-color1);
-    --main-font-color: white;
+    --main-font-color: black;
     --bg-color1: #333;
     --bg-color2: black;
     --color1: #e1381b;
@@ -29,8 +29,69 @@
     font-style: normal;
 }
 
+.hero {
+    background-image: url('../images/banner1.svg'); /* Big, bold image of Billy */
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 100px 20px;
+}
+
+.cta-button {
+    background-color: #e1381b;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cta-button-secondary {
+    background-color: #3674c1;
+    margin-left: 10px;
+    padding: 15px 30px;
+}
+
+.about-billy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.about-billy img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.about-billy blockquote {
+    font-style: italic;
+    color: #333;
+    margin-top: 20px;
+}
+
+
+.join-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    text-align: center;
+}
+
+.join-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.join-card:hover {
+    transform: scale(1.05);
+}
+
+
 body {
-    color: #f4f4f4;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16;
     line-height: 1.5em;
@@ -47,10 +108,6 @@ h1, h2, h3 {
     margin-bottom: 1.5em;
 }
 
-.header {
-    text-align: center;
-}
-
 .banner {
     display: flex;
     font-family: 'customFontFamily', sans-serif;
@@ -60,16 +117,6 @@ h1, h2, h3 {
     width: 100%;
 }
 
-/*
-.banner a,
-.banner a:hover,
-.banner a:visited,
-.banner a:active {
-    font-size: 1em;
-    background-color: #000;
-}
-    */
-
 .banner-img {
     display: flex;
     align-content: center;
@@ -77,21 +124,6 @@ h1, h2, h3 {
     object-fit: cover;
     display: block;
 }
-
-.left-img,
-.right-img {
-    min-width: 0;
-    flex-basis: 10%;
-    height: auto;
-    object-fit: cover;
-}
-
-.middle-img {
-    width: 50%;
-    height: auto;
-    object-fit: contain;
-}
-
 
 #navbar ul {
     list-style: none;
@@ -154,114 +186,18 @@ h1, h2, h3 {
     margin-top: 10px;
 }
 
-.my-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 45%;
-    align-content: center;
-    margin: 20px 10px;
-    padding: 20px;
-    text-align: center;
-}
-
-.my-box a {
-    text-decoration: none;
-    border-radius: 10%;
-    padding: 20px 30px;
-    background-color: var(--color4);
-    white-space: nowrap;
-    font-size: 1.6em;
-    color: white;
-    text-decoration: none;
-    padding-right: 15px;
-}
-
-.my-box a:hover {
-    background-color: var(--color1);
-    transform: scale(1.05);
-}
-
-.my-graphic-1 {
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
-}
-
-.my-graphic-2 {
-    border: 2px solid red;
-}
-
-.my-graphic-3 {
-    position: relative;
-    display: inline-block;
-}
-
-.my-graphic-3::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Semi-transparent dark overlay */
-    pointer-events: none;
-    /* Ensures the overlay doesn't interfere with interactivity */
-    z-index: 1;
-    border-radius: inherit;
-    /* Matches any rounded corners */
-}
-
-.my-div {
-    width:50%;
-    height: auto;
-
-}
-
-.image-container {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 1px;
-    justify-items: center;
-    align-items: center;
-}
-
-.image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
 @media (max-width: 768px) {
 
-    .my-box {
-        width: 90%;
-    }
-
-    .container img {
-        max-width: 100%;
-    }
-
-    .my-box a {
-        font-size: 1.2em;
-        padding: 15px 20px;
-    }
-
-    .container {
-        padding: 20px;
-    }
 }
 
 /* Adjusting the overall grid */
 .podcast-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
     padding: 20px;
-    justify-items: center;
 }
 
-/* Adjusting each card */
 .podcast-card {
     width: 100%;
     max-width: 400px; /* Limiting card width */
@@ -272,13 +208,13 @@ h1, h2, h3 {
     overflow: hidden;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Slightly smaller shadow */
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
     border: none; /* Remove any border, unless you want to add a custom one */
 }
 
 /* Hover effects */
 .podcast-card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -297,12 +233,9 @@ h1, h2, h3 {
 
 
 .podcast-card img {
-    width: 80%; /* Reduce the image size */
-    height: auto;
-    margin: 15px auto; /* Add vertical space */
-    padding: 10px; /* Extra padding for breathing room */
-    border-radius: 5px; /* Optional: Rounded corners */
-    display: block;
+    width: 100%;
+    border-radius: 10px; /* Optional: Rounded corners */
+    transition: transform 0.3s ease;
 }
 
 .podcast-card h3 {
