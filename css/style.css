@@ -89,15 +89,32 @@
 }
 
 .join-card {
-    background-color: #333;
+    background-color: #001f3f;
+    color: #f4f4f4;
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.3s ease;
+    text-align: center;
+}
+.join-card a {
+    display: block;
+    background-color: #f8b028; /* Light yellow for link */
+    color: #001f3f; /* Dark navy for the link text */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 20px auto 0 auto;
 }
 
 .join-card:hover {
-    transform: scale(1.05);
+    background-color: #e1381b;
+    color: #f4f4f4;
 }
+
 
 
 body {
