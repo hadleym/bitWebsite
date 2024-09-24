@@ -24,7 +24,6 @@
 
 @font-face {
     font-family: Arial, Helvectica, sans-serif;
-/*    src: url('../fonts/eddie.ttf') format('truetype');*/
     font-weight: normal;
     font-style: normal;
 }
@@ -213,9 +212,6 @@ h1, h2, h3 {
     margin-top: 10px;
 }
 
-@media (max-width: 768px) {
-
-}
 
 /* Adjusting the overall grid */
 .podcast-grid {
@@ -276,9 +272,8 @@ h1, h2, h3 {
     letter-spacing: 0.12em;
     word-spacing: 0.16em;
     margin-bottom: 2em;
-/*    font-size: 1em; */
     color: var(--main-font-color);
-/*    padding: 10px; */
+
 }
 
 .podcast-card a {
@@ -293,18 +288,98 @@ h1, h2, h3 {
 }
 
 .podcast-card a:hover {
-    background-color: var(--color1); /* Change to red on hover */
+    background-color: var(--color1);
 }
 
-.callToAction {
-    
-}
-/* Responsive Design */
 @media (max-width: 768px) {
+
+    .hero {
+        height: 200px;
+    }
+
+    .callToAction {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .cta-button, .cta-button-secondary {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+
     .podcast-grid {
-        grid-template-columns: 1fr; /* Switch to single column layout on smaller screens */
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .podcast-card {
+        padding: 15px;
+        margin: 10px auto;
+        max-width: 90%;
+    }
+
+    .podcast-card img {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .about-billy {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-billy img {
+        margin: 0 auto 20px auto; 
+    }
+
+    .join-options {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .join-card {
+        margin: 10px auto;
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    #main-footer {
+        text-align: center;
+        padding: 10px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    body {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.2em;
+    }
+
+    .cta-button, .cta-button-secondary {
+        padding: 10px;
+    }
+
+    .hero {
+        height: 150px;
+    }
+
+    .podcast-card, .join-card {
+        padding: 10px;
+    }
+
+    .podcast-card img {
+        width: 85%;
     }
 }
+
 
 
 
