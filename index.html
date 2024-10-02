@@ -10,10 +10,29 @@
     <title>The BIT Comedy Network</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 
 <body>
+    <script>
+      const headers = document.querySelectorAll('.accordion-header');
+      headers.forEach(header => {
+      header.addEventListener('click', () => {
+          const currentlyActive = document.querySelector('.accordion-header.active');
+          if (currentlyActive && currentlyActive !== header) {
+            currentlyActive.classList.remove('active');
+            currentlyActive.nextElementSibling.style.display = 'none';
+          }
+
+          header.classList.toggle('active');
+          const content = header.nextElementSibling;
+          if (header.classList.contains('active')) {
+            content.style.display = 'block';
+          } else {
+            content.style.display = 'none';
+          }
+        });
+      });
+    </script>
     <header class="hero">
     </header>
     <section class="callToAction">
@@ -40,13 +59,14 @@
             </div>
         </div>
     </section>
-    <section id="about">
+    <section class="about-summary">
         <div class="about-billy">
             <img src="./images/billyHeadshot.png" alt="Billy Merritt">
             <h2>About Billy Merritt</h2>
-            <p>Billy Merritt’s career spans three decades of improv, comedy, and voice acting. From his early days at UCB to his current projects with The BIT Comedy Network, Billy has created... </p>
-            <blockquote>"Mark, shut up." - Billy Merritt</blockquote>
+            <p>Billy Merritt is a veteran actor, writer, and producer with over three decades of experience across New York, Los Angeles, and South Florida. He’s known for his work at the Upright Citizens Brigade Theatre and for his roles in shows like Reno 911 and Brooklyn Nine-Nine.</p>
+            <a href="about.html" class="cta-button-secondary">Learn More</a>
         </div>
+    </section>
     <section id="join">
     <div class="join-options">
         <div class="join-card">
