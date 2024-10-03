@@ -14,29 +14,29 @@
 
 <body>
     <script>
-      const headers = document.querySelectorAll('.accordion-header');
-      headers.forEach(header => {
-      header.addEventListener('click', () => {
-          const currentlyActive = document.querySelector('.accordion-header.active');
-          if (currentlyActive && currentlyActive !== header) {
-            currentlyActive.classList.remove('active');
-            currentlyActive.nextElementSibling.style.display = 'none';
-          }
+        const headers = document.querySelectorAll('.accordion-header');
+        headers.forEach(header => {
+            header.addEventListener('click', () => {
+                const currentlyActive = document.querySelector('.accordion-header.active');
+                if (currentlyActive && currentlyActive !== header) {
+                    currentlyActive.classList.remove('active');
+                    currentlyActive.nextElementSibling.style.display = 'none';
+                }
 
-          header.classList.toggle('active');
-          const content = header.nextElementSibling;
-          if (header.classList.contains('active')) {
-            content.style.display = 'block';
-          } else {
-            content.style.display = 'none';
-          }
+                header.classList.toggle('active');
+                const content = header.nextElementSibling;
+                if (header.classList.contains('active')) {
+                    content.style.display = 'block';
+                } else {
+                    content.style.display = 'none';
+                }
+            });
         });
-      });
     </script>
     <header class="hero">
     </header>
     <section class="callToAction">
-        <a href="#podcasts" class="cta-button">Listen Now</a>
+        <a href="https://podcasts.apple.com/us/podcast/rabbithole-improv/id1752938027" class="cta-button">Listen Now</a>
         <a href="#join" class="cta-button-secondary">Join Us</a>
     </section>
     <section id="podcasts">
@@ -62,48 +62,52 @@
     <section class="about-summary">
         <div class="about-billy">
             <img src="./images/billyHeadshot.png" alt="Billy Merritt">
-            <p>Billy Merritt is a veteran actor, writer, and producer with over three decades of experience across New York, Los Angeles, and South Florida. He’s known for his work at the Upright Citizens Brigade Theatre and for his roles in shows like Reno 911 and Brooklyn Nine-Nine.</p>
+            <p>Billy Merritt is a veteran actor, writer, and producer with over three decades of experience across New
+                York, Los Angeles, and South Florida. He’s known for his work at the Upright Citizens Brigade Theatre
+                and for his roles in shows like Reno 911 and Brooklyn Nine-Nine.</p>
             <a href="about.html" class="cta-button-secondary">Learn More</a>
         </div>
     </section>
     <section id="join">
-    <div class="join-options">
-        <div class="join-card">
-            <h3>Join the Crew</h3>
-Want to be part of a supportive, hilarious community? Join Billy and the BIT Crew in making podcast magic!
-            <a href="https://bit.ly/BITCREWApp">Apply Now</a>
+        <div class="join-options">
+            <div class="join-card">
+                <h3>Join the Crew</h3>
+                Want to be part of a supportive, hilarious community? Join Billy and the BIT Crew in making podcast
+                magic!
+                <a href="https://bit.ly/BITCREWApp">Apply Now</a>
+            </div>
+            <div class="join-card">
+                <h3>Pitch a Podcast</h3>
+                Have a podcast idea that’s as unique as your team? Pitch your concept and bring your improv to life on
+                the BIT Comedy Network!"
+                <a href="#">Submit Your Idea</a>
+            </div>
+            <div class="join-card">
+                <h3>Sponsor an Episode</h3>
+                Love our podcasts and want to support comedy? Sponsor an episode and hear your name or business
+                highlighted on the BIT Comedy Network!
+                <a href="#">Learn More</a>
+            </div>
         </div>
-        <div class="join-card">
-            <h3>Pitch a Podcast</h3>
-            Have a podcast idea that’s as unique as your team? Pitch your concept and bring your improv to life on the BIT Comedy Network!"
-            <a href="#">Submit Your Idea</a>
-        </div>
-        <div class="join-card">
-            <h3>Sponsor an Episode</h3>
-            Love our podcasts and want to support comedy? Sponsor an episode and hear your name or business highlighted on the BIT Comedy Network!
-            <a href="#">Learn More</a>
-        </div>
-    </div>
-</section>
+    </section>
 
-<section id="social-media">
-    <h2>Connect with Us</h2>
-    <div class="social-icons">
-        <a href="https://www.facebook.com/BITComedyNetwork" target="_blank" aria-label="Facebook">
-            <i class="fab fa-facebook"></i>
-        </a>
-        <a href="https://www.instagram.com/bitcomedynetwork/" target="_blank" aria-label="Instagram">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="mailto:TheBITComedyNetwork@gmail.com">
-            <i class="fas fa-envelope"></i>
-        </a>
-    </div>
-</section>
+    <section id="social-media">
+        <h2>Connect with Us</h2>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/BITComedyNetwork" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/bitcomedynetwork/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:TheBITComedyNetwork@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </section>
     <footer id="main-footer">
         <p>&copy; 2024 The BIT Comedy Network</p>
     </footer>
 </body>
 
 </html>
-

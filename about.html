@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,66 +8,62 @@
     <title>About Billy Merritt</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<section class="accordion">
-    <div class="about-billy">
-        <img src="./images/billyHeadshot.png" alt="Billy Merritt">
-        <h2>About Billy Merritt</h2>
-    </div>
-
-    <div class="accordion-item">
-        <button class="accordion-header">Career Overview</button>
-        <div class="accordion-content">
-            <p>Billy Merritt’s entertainment career as an actor, writer, teacher, and producer spans three decades and three markets (New York, Los Angeles, and South Florida).</p>
+    <section class="accordion">
+        <div class="about-billy">
+            <img src="./images/billyHeadshot.png" alt="Billy Merritt">
+            <h2>About Billy Merritt</h2>
         </div>
-    </div>
 
-    <div class="accordion-item">
-        <button class="accordion-header">UCB Involvement</button>
-        <div class="accordion-content">
-            <p>Billy's affiliation with Upright Citizens Brigade Theatre began at its inception. He created numerous UCB shows, including The Documentary, The Improvised One Acts, and Murder Murder.</p>
+        <div>
+            <p>Billy Merritt’s entertainment career as an actor, writer, teacher, and producer spans three decades and
+                three markets (New York, Los Angeles, and South Florida).
+
+            <p>Billy's affiliation with Upright Citizens Brigade Theatre began at its inception.
+                He is credited with creating numerous UCB shows, including The Documentary, The Improvised One Acts,
+                Murder
+                Murder, The Sunshine Gang, and The Garfunkel. Billy also co-founded and performed with legendary improv
+                troupes: The Swarm and The Stepfathers (New York) and The Smokes (Los Angeles).</p>
+
+            <p>
+                Billy kickstarted a successful television and voice acting career on UCB’s Comedy Central show and made
+                multiple appearances on Late Night With Conan O’Brien, MTV’s Boiling Points, and VH1’s Best Week Ever.
+            </p>
+            <p>In Billy’s Los Angeles era, he booked dozens of notable shows, including The Connors, Reno 911, Happy
+                Endings, Weeds, Parks and Recreation, Brooklyn Nine-Nine, Workaholics, and many more.
+            </p>
+            <p>
+                Billy’s distinctive voice can be heard in many commercials and animated productions. He voices Fryman
+                from
+                Steven Universe (Cartoon Network) and hosts Jameson’s Radio Network.
+            </p>
+            <p>
+                A native Floridian, Billy returned to the Sunshine State in 2023 and proudly maintains a Florida Man
+                lifestyle. He quickly infiltrated the local improv scene and performs regularly in Florida, Los Angeles,
+                and
+                across the EU.
+            </p>
         </div>
-    </div>
+    </section>
+    <script>
+        const headers = document.querySelectorAll('.accordion-header');
+        headers.forEach(header => {
+            header.addEventListener('click', () => {
+                header.classList.toggle('active');
 
-    <div class="accordion-item">
-        <button class="accordion-header">TV and Voice Acting</button>
-        <div class="accordion-content">
-            <p>Billy started a successful TV and voice acting career on UCB’s Comedy Central show, Late Night with Conan O’Brien, and VH1’s Best Week Ever.</p>
-        </div>
-    </div>
+                const content = header.nextElementSibling;
 
-    <div class="accordion-item">
-        <button class="accordion-header">Los Angeles Era</button>
-        <div class="accordion-content">
-            <p>In Los Angeles, Billy booked shows like The Connors, Reno 911, Parks and Recreation, Brooklyn Nine-Nine, and more.</p>
-        </div>
-    </div>
-
-    <div class="accordion-item">
-        <button class="accordion-header">Return to Florida</button>
-        <div class="accordion-content">
-            <p>Billy returned to Florida in 2023, proudly maintaining a "Florida Man" lifestyle while performing in Florida, Los Angeles, and the EU.</p>
-        </div>
-    </div>
-</section>
-<script>
-  const headers = document.querySelectorAll('.accordion-header');
-  headers.forEach(header => {
-    header.addEventListener('click', () => {
-      header.classList.toggle('active');
-
-      const content = header.nextElementSibling;
-
-      if (header.classList.contains('active')) {
-        content.style.display = 'block';
-      } else {
-        content.style.display = 'none';
-      }
-    });
-  });
-</script>
+                if (header.classList.contains('active')) {
+                    content.style.display = 'block';
+                } else {
+                    content.style.display = 'none';
+                }
+            });
+        });
+    </script>
 
 
 </body>
-</html>
 
+</html>
