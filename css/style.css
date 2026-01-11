@@ -483,6 +483,82 @@ h3 {
     h3 {
         font-size: 1.2em;
     }
+/* Group the 5 tiles together */
+.mainstage-tile-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px auto;
+    max-width: 900px; /* optional, keeps it from stretching too wide on desktop */
+    padding: 0 16px;
+}
+
+/* Base tile styles (works for both parent and children) */
+.mainstage-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    background-color: var(--bg-color2, white); /* falls back to white if var not set */
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Optional hover effect */
+.mainstage-tile:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Image inside each tile */
+.mainstage-tile img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Label under each image */
+.mainstage-tile-label {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: inherit;
+    text-align: center;
+}
+
+/* Parent tile a bit larger, more prominent */
+.mainstage-tile--main {
+    flex: 1 1 240px;   /* grows more */
+    max-width: 260px;
+}
+
+/* Child tiles smaller */
+.mainstage-tile--child {
+    flex: 1 1 140px;
+    max-width: 160px;
+}
+
+/* Mobile tweaks */
+@media (max-width: 300px) {
+    .mainstage-tile-group {
+        justify-content: center;
+    }
+
+    .mainstage-tile--main {
+        flex: 1 1 100%;
+        max-width: 260px;
+    }
+
+    .mainstage-tile--child {
+        flex: 1 1 45%;      /* two per row on small screens */
+        max-width: none;
+    }
+}
 
     .cta-button,
     .cta-button-secondary {
@@ -502,3 +578,5 @@ h3 {
         width: 85%;
     }
 }
+
+
