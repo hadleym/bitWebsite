@@ -59,6 +59,15 @@ h1, h2, h3 {
     gap: 16px;
 }
 
+.tile-children-row .tile {
+    max-width: 120px;
+    flex: 0 0 120px;
+
+}
+.tile-children-row .tile .img {
+    border-radius: 6px;
+}
+
 /* TILE CARD */
 .tile {
     background-color: var(--bg-color2);
