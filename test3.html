@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
+
 <body>
 
     <header class="hero">
@@ -24,55 +25,73 @@
             <p>Original comedy podcasts from Billy Merritt and the BIT Crew.</p>
         </div>
     </header>
+    <section class="tile-section">
+        <div class="tile-main-row">
+            <!-- Main tile -->
+            <a href="https://example.com" target="_blank" class="tile main-title">
+                <img src="images/mainstage1.png" alt="Parent Tile">
+                <span class="tile-label">Parent Item</span>
+            </a>
+        </div>
+        <div class="tile-children-row">
+            <a href="https://example.com" target="_blank" class="tile">
+                <img src="images/child1.png" alt="Child 1">
+                <span class="tile-label">Child 1</span>
+            </a>
+        </div>
+    </section>
+    <section class="tile-section">
+        <div class="tile-main-row">
+            <!-- Main tile -->
+            <a href="https://example.com" target="_blank" class="tile main-title">
+                <img src="images/mainstage1.png" alt="Parent Tile">
+                <span class="tile-label">Parent Item</span>
+            </a>
+        </div>
+        <div class="tile-children-row">
+            <a href="https://example.com" target="_blank" class="tile">
+                <img src="images/child1.png" alt="Child 1">
+                <span class="tile-label">Child 1</span>
+            </a>
+        </div>
+    </section>
+    <section class="about-summary">
+        <img src="./images/billyHeadshot.png" alt="Billy Merritt">
+        <div class="about-billy">
+            <p>Billy Merritt is a veteran actor, writer, and producer with over three decades of experience across New
+                York, Los Angeles, and South Florida.</p>
+            <p>He’s known for his work at the Upright Citizens Brigade Theatre
+                and for his roles in shows like Reno 911 and Brooklyn Nine-Nine.</p>
+            <a href="about.html" class="cta-button-secondary">Learn More</a>
+        </div>
+    </section>
+    <section id="join">
+        <div class="join-options">
+            <div class="join-card">
+                <h3>Join the Crew</h3>
+                Want to be part of a supportive, hilarious community? Join Billy and the BIT Crew in making podcast
+                magic!
+                <a
+                    href="https://docs.google.com/document/d/11emiNljykej9RLVXc0_uoCOAUTmZKb-L/edit?usp=sharing&ouid=100126610824418985168&rtpof=true&sd=true">Apply
+                    Now</a>
+            </div>
+        </div>
+    </section>
 
-<section id="mainstage" class="section">
-    <header class="section-header">
-        <h2>Mainstage</h2>
-        <p>Our flagship shows, together in one place.</p>
-    </header>
-
-    <div class="mainstage-tile-group">
-        <!-- Main (parent) tile -->
-        <a href="https://external-mainstage-link.example.com"
-           target="_blank"
-           class="mainstage-tile mainstage-tile--main">
-            <img src="images/mainstage-main.png" alt="Mainstage" />
-            <span class="mainstage-tile-label">Mainstage Hub</span>
-        </a>
-
-        <!-- Child tile 1 -->
-        <a href="https://external-mainstage-link.example.com"
-           target="_blank"
-           class="mainstage-tile mainstage-tile--child">
-            <img src="images/mainstage-child1.png" alt="Show 1" />
-            <span class="mainstage-tile-label">Show 1</span>
-        </a>
-
-        <!-- Child tile 2 -->
-        <a href="https://external-mainstage-link.example.com"
-           target="_blank"
-           class="mainstage-tile mainstage-tile--child">
-            <img src="images/mainstage-child2.png" alt="Show 2" />
-            <span class="mainstage-tile-label">Show 2</span>
-        </a>
-
-        <!-- Child tile 3 -->
-        <a href="https://external-mainstage-link.example.com"
-           target="_blank"
-           class="mainstage-tile mainstage-tile--child">
-            <img src="images/mainstage-child3.png" alt="Show 3" />
-            <span class="mainstage-tile-label">Show 3</span>
-        </a>
-
-        <!-- Child tile 4 -->
-        <a href="https://external-mainstage-link.example.com"
-           target="_blank"
-           class="mainstage-tile mainstage-tile--child">
-            <img src="images/mainstage-child4.png" alt="Show 4" />
-            <span class="mainstage-tile-label">Show 4</span>
-        </a>
-    </div>
-</section>
+    <section id="social-media">
+        <h2>Connect with Us</h2>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/BITComedyNetwork" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/bitcomedynetwork/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:TheBITComedyNetwork@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </section>
 
     <!-- FOOTER -->
     <footer id="main-footer">
