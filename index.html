@@ -3,88 +3,93 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
     <title>The BIT Comedy Network</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <script>
-        const headers = document.querySelectorAll('.accordion-header');
-        headers.forEach(header => {
-            header.addEventListener('click', () => {
-                const currentlyActive = document.querySelector('.accordion-header.active');
-                if (currentlyActive && currentlyActive !== header) {
-                    currentlyActive.classList.remove('active');
-                    currentlyActive.nextElementSibling.style.display = 'none';
-                }
 
-                header.classList.toggle('active');
-                const content = header.nextElementSibling;
-                if (header.classList.contains('active')) {
-                    content.style.display = 'block';
-                } else {
-                    content.style.display = 'none';
-                }
-            });
-        });
-    </script>
-    <header class="hero">
-    </header>
-    <section class="callToAction">
-        <a href="https://bitrabbithole.libsyn.com/" class="cta-button">Listen Now</a>
-        <a href="#join" class="cta-button-secondary">Join Us</a>
-    </section>
-    <section id="podcasts">
-        <div class="podcast-grid">
-            <div class="podcast-card">
-                <img src="images/podclass1.jpeg" alt="Podcast Town">
-                <a href="https://bitpodclass.libsyn.com/">Listen Now</a>
+    <a href="https://BITMainStage.libsyn.com" class="tile-section-link">
+        <section class="tile-section" style="background-color:#e0f7fa;">
+
+            <div class="tile-main-row">
+                <div class="tile main-title">
+                    <img src="images/mainstage1.png" alt="Parent Tile">
+                </div>
             </div>
-            <div class="podcast-card">
-                <img src="images/podcastTown.png" alt="Podcast Town">
-                <a href="https://bitpodcasttown.libsyn.com/">Listen Now</a>
+
+            <div class="tile-children-row">
+                <div class="tile">
+                    <img src="images/movieMovie.png" alt="Movie Movie">
+                </div>
+
+                <div class="tile">
+                    <img src="images/podcastTown.png" alt="Podcast Town">
+                </div>
+                <div class="tile">
+                    <img src="images/dinnerParty.png" alt="Dinner Party">
+                </div>
+                <div class="tile">
+                    <img src="images/rabbitHole.png" alt="Rabbit Hole">
+                </div>
+                <div class="tile">
+                    <img src="images/thinkOf.png" alt="That Makes Me Think Of">
+                </div>
             </div>
-            <div class="podcast-card">
-                <img src="images/rabbitHole.png" alt="Rabbit Hole">
-                <a href="https://bitrabbithole.libsyn.com/">Listen Now</a>
+        </section>
+    </a>
+
+    <a href="https://BITSpotlight.libsyn.com" class="tile-section-link">
+        <section class="tile-section" style="background-color:#d0e7ff;">
+            <div class="tile-main-row">
+                <div class="tile main-title">
+                    <img src="images/spotlight2.jpg" alt="Spotlight">
+                </div>
             </div>
-            <div class="podcast-card">
-                <img src="images/spotlight.jpg" alt="The BIT Spotlight">
-                <a href="https://bitspotlight.libsyn.com/">Listen Now!</a>
+            <div class="tile-children-row">
+                <div class="tile">
+                    <img src="images/samplesOfSin.png" alt="Samples of Sin">
+                </div>
+                <div class="tile">
+                    <img src="images/gail.png" alt="Shut Up Gail">
+                </div>
+                <div class="tile">
+                    <img src="images/batr.png" alt="Backstage at the Regency">
+                </div>
             </div>
-            <div class="podcast-card">
-                <img src="images/movieMovie.jfif" alt="Movie! Movie!">
-                <a href="https://bitmoviemovie.libsyn.com">Listen Now!</a>
-            </div>
-        </div>
-    </section>
+        </section>
+    </a>
+
+    <!-- ABOUT -->
     <section class="about-summary">
-            <img src="./images/billyHeadshot.png" alt="Billy Merritt">
+        <img src="./images/billyHeadshot.png" alt="Billy Merritt">
+
         <div class="about-billy">
             <p>Billy Merritt is a veteran actor, writer, and producer with over three decades of experience across New
-            York, Los Angeles, and South Florida.</p>
-            <p>He’s known for his work at the Upright Citizens Brigade Theatre
-                and for his roles in shows like Reno 911 and Brooklyn Nine-Nine.</p>
+                York, Los Angeles, and South Florida.</p>
+            <p>He’s known for his work at the Upright Citizens Brigade Theatre and roles in Reno 911 and
+                Brooklyn Nine-Nine.</p>
             <a href="about.html" class="cta-button-secondary">Learn More</a>
         </div>
     </section>
+
+    <!-- JOIN -->
     <section id="join">
         <div class="join-options">
             <div class="join-card">
                 <h3>Join the Crew</h3>
-                Want to be part of a supportive, hilarious community? Join Billy and the BIT Crew in making podcast
-                magic!
-                <a href="https://docs.google.com/document/d/11emiNljykej9RLVXc0_uoCOAUTmZKb-L/edit?usp=sharing&ouid=100126610824418985168&rtpof=true&sd=true">Apply Now</a>
+                <p>Want to be part of a supportive, hilarious community? Join Billy and the BIT Crew in making podcast
+                    magic!</p>
+                <a href="https://docs.google.com/document/d/11emiNljykej9RLVXc0_uoCOAUTmZKb-L/edit"
+                    target="_blank">Apply Now</a>
             </div>
         </div>
     </section>
 
+    <!-- SOCIAL -->
     <section id="social-media">
         <h2>Connect with Us</h2>
         <div class="social-icons">
@@ -99,9 +104,12 @@
             </a>
         </div>
     </section>
+
+    <!-- FOOTER -->
     <footer id="main-footer">
-        <p>&copy; 2025 The BIT Comedy Network&trade;</p>
+        <p>&copy; 2026 The BIT Comedy Network&trade;</p>
     </footer>
+
 </body>
 
 </html>
