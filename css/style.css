@@ -93,6 +93,20 @@ h1, h2, h3 {
     border-radius: 10px;
 }
 
+.tile.main-title {
+    max-width: 260px;
+    width: 100%;
+    flex: 0 0 auto;
+    margin: 0 auto;
+}
+
+.title.main-title img {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+}
+
 .tile-label {
     margin-top: 8px;
     font-size: 0.9rem;
